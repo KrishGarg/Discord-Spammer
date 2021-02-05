@@ -1,7 +1,6 @@
 import pyautogui
 import time
 
-
 #declaring variables
 looper = 0 
 msgs = 0
@@ -9,10 +8,11 @@ msgs = 0
 timeneeded = int(input("Time you need to switch to discord (in seconds): "))
 messages = int(input("How many messages per cycles: "))
 cycles = int(input("How many cycles of messages: "))
+text = input("What you want to spam: ")
 print("Quickly, you have", timeneeded, "seconds to open discord and the channel/dm you want to spam in!")
 
 def spam():                       #I mean if you don't understand even this, duh.
-    pyautogui.typewrite("Test 5 messages, 4 cycles.")
+    pyautogui.typewrite(text)
     pyautogui.press("enter")
 
 #gives time to switch to discord
